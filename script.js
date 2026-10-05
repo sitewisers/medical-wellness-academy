@@ -32,3 +32,26 @@ if(form){
    if(option) select.value=option.value;
  }
 }
+
+
+// Combined offer mapping and optional non-personal campaign identifiers.
+const offerIds={"Pathway to Aesthetics":"PTA-20261028","Wellness Injection Masterclass":"WIM-TBD"};
+if(form){
+ const courseSelect=form.querySelector('[name="course"]');
+ const syncOffer=()=>{const field=form.querySelector('[name="offer_id"]');if(field)field.value=offerIds[courseSelect.value]||'';};
+ syncOffer();courseSelect.addEventListener('change',syncOffer);
+ const campaignParams=new URLSearchParams(location.search);
+ ['utm_source','utm_medium','utm_campaign','utm_content'].forEach(key=>{
+  const field=form.querySelector('[name="'+key+'"]');const value=campaignParams.get(key)||'';
+  if(field&&/^[A-Za-z0-9_. -]{0,100}$/.test(value))field.value=value;
+ });
+ if(form.dataset.reviewOnly==='true'){
+  const draftCheck=form.querySelector('[data-draft-check]');
+  if(draftCheck)draftCheck.addEventListener('click',()=>{
+   const fields=[...form.querySelectorAll('input,select,textarea')];
+   const invalid=fields.find(field=>!field.checkValidity());
+   if(invalid){invalid.reportValidity();return;}
+   document.querySelector('#draft-form-result').textContent='Draft check complete. Nothing has been sent, saved or charged. The Academy enquiry route must be tested before release.';
+  });
+ }
+}

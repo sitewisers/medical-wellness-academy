@@ -1,0 +1,73 @@
+{
+  "version": "2026-10-05",
+  "source": "User shared completion checklist, 5 October 2026; exosomes theory-only scope retained from MWA full content audit 5 October 2026",
+  "brand": "Medical Wellness Academy",
+  "email": "academy@medicalwellnesslondon.com",
+  "location": "61 Mansell Street, London E1 8AN",
+  "offers": [
+    {
+      "id": "PTA-20261028",
+      "slug": "pathway-to-aesthetics",
+      "title": "Pathway to Aesthetics",
+      "label": "Three day programme",
+      "duration": "3 days",
+      "dates": "28, 29 and 30 October 2026",
+      "price": 1999,
+      "image": "room-1.webp",
+      "lead": "Build your understanding of aesthetic treatments, consultation and safe practice through focused theory and supervised practical learning in London.",
+      "intro": "A structured three day programme bringing anatomy, treatment selection and core aesthetics topics together, with consultation, consent and aftercare throughout.",
+      "groups": [
+        [
+          "Foundations and consultation",
+          "Anatomy and physiology; consultation and consent; treatment selection; safe practice and aftercare."
+        ],
+        [
+          "Foundation injectable topics",
+          "Foundation antiwrinkle and fillers; filler dissolving and complications; assessment and treatment planning."
+        ],
+        [
+          "Skin and product knowledge",
+          "Microneedling; polynucleotides; Lumi Eyes; mesotherapy; skin boosters; Profhilo; chemical peels."
+        ],
+        [
+          "Exosomes",
+          "Theory only. The current programme does not promise practical exosome administration."
+        ]
+      ],
+      "note": "Anatomy and physiology content does not establish a formal Level 3 qualification. The programme has its own timetable, assessment and certificate requirements.",
+      "related": "The Wellness Injection Masterclass is a separate one day programme covering phlebotomy, IV therapy, IM vitamin injections and PRP."
+    },
+    {
+      "id": "WIM-TBD",
+      "slug": "wellness-injection-masterclass",
+      "title": "Wellness Injection Masterclass",
+      "label": "One day masterclass",
+      "duration": "1 day",
+      "dates": "Next course date to be confirmed",
+      "price": 599,
+      "image": "room-3.webp",
+      "lead": "Bring phlebotomy, IV therapy, IM vitamin injections and PRP together in one focused day of theory and supervised practical learning.",
+      "intro": "Explore the assessment, preparation and safety principles behind four clinical skill areas, alongside consent, documentation and aftercare.",
+      "groups": [
+        [
+          "Phlebotomy",
+          "Blood collection techniques, patient identification and safe sample handling."
+        ],
+        [
+          "IV therapy",
+          "IV cannulation and infusion principles, preparation, monitoring and recognising when to escalate concerns."
+        ],
+        [
+          "IM vitamin injections",
+          "Vitamin selection principles, suitability, contraindications and IM injection techniques within an approved clinical framework."
+        ],
+        [
+          "PRP",
+          "PRP preparation, centrifugation and treatment principles, linked to the selected system and approved protocol."
+        ]
+      ],
+      "note": "The combined masterclass has its own timetable, practical scope, assessment and certificate requirements. It does not automatically include the full hours or awards of separate activities.",
+      "related": "Pathway to Aesthetics is a separate three day programme on 28, 29 and 30 October 2026."
+    }
+  ]
+}
