@@ -127,3 +127,6 @@ h1,h2,h3,p{max-width:100%;overflow-wrap:break-word}
 /* Hero training image crop refinement — 2026-10-06 */
 .approved-hero-media img{object-position:45% center}
 @media(max-width:680px){.approved-hero-media img{object-position:42% center}}
+/* Hero crop correction: reveal more of treatment/model on right */
+.approved-hero-media img{object-position:62% center}
+@media(max-width:680px){.approved-hero-media img{object-position:68% center}}
