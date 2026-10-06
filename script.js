@@ -55,3 +55,37 @@ if(form){
   });
  }
 }
+
+const homeEnquiryForm=document.querySelector(".home-enquiry-form");
+if(homeEnquiryForm){
+  const statusEl=homeEnquiryForm.querySelector(".home-form-status");
+  homeEnquiryForm.addEventListener("submit",async(e)=>{
+    e.preventDefault();
+    const button=homeEnquiryForm.querySelector('button[type="submit"]');
+    const fd=new FormData(homeEnquiryForm);
+    const payload={
+      name:String(fd.get("name")||""),
+      email:String(fd.get("email")||""),
+      phone:String(fd.get("phone")||""),
+      course:String(fd.get("course")||""),
+      message:String(fd.get("message")||""),
+      privacy:fd.get("privacy")==="Agreed",
+      website:String(fd.get("website")||""),
+      page:location.pathname+location.search,
+      utm_source:String(fd.get("utm_source")||""),
+      utm_medium:String(fd.get("utm_medium")||""),
+      utm_campaign:String(fd.get("utm_campaign")||""),
+      utm_content:String(fd.get("utm_content")||"")
+    };
+    try{
+      if(button){button.disabled=true;button.textContent="Sending…"}
+      if(statusEl)statusEl.textContent="";
+      const res=await fetch(homeEnquiryForm.action,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
+      if(!res.ok)throw new Error("submit_failed");
+      location.href="thanks.html";
+    }catch{
+      if(statusEl)statusEl.textContent="That did not send. Please try again or email academy@medicalwellnesslondon.com.";
+      if(button){button.disabled=false;button.textContent="Send Enquiry →"}
+    }
+  });
+}

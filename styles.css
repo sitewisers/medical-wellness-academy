@@ -142,3 +142,5 @@ h1,h2,h3,p{max-width:100%;overflow-wrap:break-word}
 .home-form-bottom{display:flex;justify-content:space-between;gap:28px;align-items:center;margin-top:20px}.home-enquiry-form .check{display:flex;gap:9px;align-items:flex-start;text-transform:none;letter-spacing:0;font-weight:400;font-size:10px;line-height:1.45;color:#6b6054;max-width:420px;margin:0}
 .home-enquiry-form .check input{width:auto;margin:2px 0 0}.home-enquiry-form .check a{color:#8e652c}.home-enquiry-form .form-note{font-size:9px;color:#8b8075;margin:14px 0 0}
 @media(max-width:900px){.home-enquiry-section>.wrap{grid-template-columns:1fr;gap:34px}}@media(max-width:680px){.home-enquiry-section{padding:62px 0}.home-enquiry-form{padding:25px 20px}.home-form-grid{grid-template-columns:1fr}.home-form-bottom{display:block}.home-form-bottom .button{width:100%;margin-top:20px}.home-enquiry-heading h2{font-size:43px}}
+.home-form-status{font-size:10px;color:#8b3f32;margin:10px 0 0;min-height:14px}
+.home-enquiry-form button:disabled{opacity:.65;cursor:wait}
