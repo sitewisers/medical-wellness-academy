@@ -68,6 +68,30 @@
       ],
       "note": "The combined masterclass has its own timetable, practical scope, assessment and certificate requirements. It does not automatically include the full hours or awards of separate activities.",
       "related": "Pathway to Aesthetics is a separate three day programme on 28, 29 and 30 October 2026."
+    },
+    {
+      "id": "RMM-TBD",
+      "slug": "regenerative-medicine-masterclass",
+      "title": "Regenerative Medicine Masterclass",
+      "label": "Regenerative masterclass",
+      "duration": "To be confirmed",
+      "dates": "Next course date to be confirmed",
+      "price": 699,
+      "image": "room-3.webp",
+      "lead": "PRP, PRF and exosome science with safe professional practice throughout.",
+      "note": "Exosome practical administration is not promised unless an exact product and approved protocol are confirmed."
+    },
+    {
+      "id": "CBM-TBD",
+      "slug": "collagen-biostimulators-masterclass",
+      "title": "Collagen Biostimulators Masterclass",
+      "label": "Liquid Face Lift masterclass",
+      "duration": "To be confirmed",
+      "dates": "Next course date to be confirmed",
+      "price": 899,
+      "image": "clinic-detail.jpg",
+      "lead": "Sculptra, Olidia and Radiesse with product science, assessment and treatment planning.",
+      "note": "The course title does not promise a surgical-equivalent facelift result."
     }
   ]
 }

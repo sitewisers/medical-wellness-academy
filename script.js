@@ -35,7 +35,7 @@ if(form){
 
 
 // Combined offer mapping and optional non-personal campaign identifiers.
-const offerIds={"Pathway to Aesthetics":"PTA-20261028","Wellness Injection Masterclass":"WIM-TBD"};
+const offerIds={"Pathway to Aesthetics":"PTA-20261028","Wellness Injection Masterclass":"WIM-TBD","Regenerative Medicine Masterclass":"RMM-TBD","Collagen Biostimulators Masterclass":"CBM-TBD"};
 if(form){
  const courseSelect=form.querySelector('[name="course"]');
  const syncOffer=()=>{const field=form.querySelector('[name="offer_id"]');if(field)field.value=offerIds[courseSelect.value]||'';};
