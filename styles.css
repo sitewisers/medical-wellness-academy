@@ -130,3 +130,15 @@ h1,h2,h3,p{max-width:100%;overflow-wrap:break-word}
 /* Hero crop correction: reveal more of treatment/model on right */
 .approved-hero-media img{object-position:62% center}
 @media(max-width:680px){.approved-hero-media img{object-position:68% center}}
+
+/* Homepage enquiry conversion section */
+.home-enquiry-section{padding:82px 0 88px;background:linear-gradient(105deg,#f8f1e7 0%,#fffdf9 100%)}
+.home-enquiry-section>.wrap{display:grid;grid-template-columns:.78fr 1.22fr;gap:82px;align-items:start}
+.home-enquiry-heading h2{font-size:clamp(42px,4.5vw,62px);line-height:1.03;margin:10px 0 22px}.home-enquiry-heading p{font-size:14px;line-height:1.75;color:#62584d;max-width:480px}
+.home-enquiry-form{background:#fff;padding:34px 36px 30px;border:1px solid #e7d8c1;box-shadow:0 18px 55px rgba(80,57,27,.06)}
+.home-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px}.home-enquiry-form label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:#3c342d}
+.home-enquiry-form input,.home-enquiry-form select,.home-enquiry-form textarea{width:100%;margin-top:8px;padding:13px 14px;border:1px solid #dfd0ba;background:#fffdf9;color:#2c251f;font:400 13px "DM Sans",sans-serif;border-radius:0}
+.home-enquiry-form input:focus,.home-enquiry-form select:focus,.home-enquiry-form textarea:focus{outline:2px solid rgba(184,138,61,.24);border-color:#b88a3d}.home-message{margin-top:20px}.home-enquiry-form textarea{resize:vertical}
+.home-form-bottom{display:flex;justify-content:space-between;gap:28px;align-items:center;margin-top:20px}.home-enquiry-form .check{display:flex;gap:9px;align-items:flex-start;text-transform:none;letter-spacing:0;font-weight:400;font-size:10px;line-height:1.45;color:#6b6054;max-width:420px;margin:0}
+.home-enquiry-form .check input{width:auto;margin:2px 0 0}.home-enquiry-form .check a{color:#8e652c}.home-enquiry-form .form-note{font-size:9px;color:#8b8075;margin:14px 0 0}
+@media(max-width:900px){.home-enquiry-section>.wrap{grid-template-columns:1fr;gap:34px}}@media(max-width:680px){.home-enquiry-section{padding:62px 0}.home-enquiry-form{padding:25px 20px}.home-form-grid{grid-template-columns:1fr}.home-form-bottom{display:block}.home-form-bottom .button{width:100%;margin-top:20px}.home-enquiry-heading h2{font-size:43px}}
