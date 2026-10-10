@@ -45,20 +45,12 @@ if(form){
   const field=form.querySelector('[name="'+key+'"]');const value=campaignParams.get(key)||'';
   if(field&&/^[A-Za-z0-9_. -]{0,100}$/.test(value))field.value=value;
  });
- if(form.dataset.reviewOnly==='true'){
-  const draftCheck=form.querySelector('[data-draft-check]');
-  if(draftCheck)draftCheck.addEventListener('click',()=>{
-   const fields=[...form.querySelectorAll('input,select,textarea')];
-   const invalid=fields.find(field=>!field.checkValidity());
-   if(invalid){invalid.reportValidity();return;}
-   document.querySelector('#draft-form-result').textContent='Draft check complete. Nothing has been sent, saved or charged. The Academy enquiry route must be tested before release.';
-  });
- }
+
 }
 
-const homeEnquiryForm=document.querySelector(".home-enquiry-form");
+const homeEnquiryForm=document.querySelector(".home-enquiry-form, .academy-enquiry-form");
 if(homeEnquiryForm){
-  const statusEl=homeEnquiryForm.querySelector(".home-form-status");
+  const statusEl=homeEnquiryForm.querySelector(".home-form-status, .academy-form-status");
   homeEnquiryForm.addEventListener("submit",async(e)=>{
     e.preventDefault();
     const button=homeEnquiryForm.querySelector('button[type="submit"]');
@@ -68,7 +60,7 @@ if(homeEnquiryForm){
       email:String(fd.get("email")||""),
       phone:String(fd.get("phone")||""),
       course:String(fd.get("course")||""),
-      message:String(fd.get("message")||""),
+      message:[String(fd.get("background")||"").trim() ? `Professional background: ${String(fd.get("background")).trim()}` : "",String(fd.get("message")||"").trim()].filter(Boolean).join("\n\n"),
       privacy:fd.get("privacy")==="Agreed",
       website:String(fd.get("website")||""),
       page:location.pathname+location.search,
