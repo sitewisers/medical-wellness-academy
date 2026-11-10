@@ -82,6 +82,21 @@ if(homeEnquiryForm){
       if(statusEl)statusEl.textContent="";
       const res=await fetch(homeEnquiryForm.action,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)});
       if(!res.ok)throw new Error("submit_failed");
+      const saved=await res.json();
+      if(saved.ok!==true||!saved.lead_id)throw new Error("submit_failed");
+      try{
+        const emailRes=await fetch("https://formsubmit.co/ajax/academy@medicalwellnesslondon.com",{
+          method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},
+          signal:AbortSignal.timeout(15000),
+          body:JSON.stringify({...payload,_subject:"New Medical Wellness Academy website enquiry",_template:"table",_url:location.href,lead_id:saved.lead_id})
+        });
+        const emailResult=await emailRes.json();
+        if(!emailRes.ok||String(emailResult.success)!=="true")throw new Error("email_failed");
+      }catch{
+        if(statusEl)statusEl.textContent="Your enquiry has been received. The email notification could not be confirmed, but you do not need to submit again.";
+        if(button){button.disabled=true;button.textContent="Enquiry received";}
+        return;
+      }
       location.href="thanks.html";
     }catch{
       if(statusEl)statusEl.textContent="That did not send. Please try again or email academy@medicalwellnesslondon.com.";
