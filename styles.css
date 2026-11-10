@@ -154,3 +154,12 @@ h1,h2,h3,p{max-width:100%;overflow-wrap:break-word}
   .section-head:has(> .catalogue-cpd-badge){flex-direction:column;align-items:center!important;}
   .section-head > .catalogue-cpd-badge{margin-inline:auto!important;}
 }
+
+/* Keep the Academy approach readable and its full room photo visible on mobile. */
+@media(max-width:960px){
+ .image-story-grid.reverse.academy-approach{grid-template-columns:minmax(0,1fr);gap:32px;}
+ .academy-approach .story-copy{text-align:left;}
+ .academy-approach .story-copy h2{font-size:clamp(30px,7vw,44px);line-height:1.16;text-wrap:balance;}
+ .academy-approach .story-copy p{font-size:16px;line-height:1.75;}
+ .academy-approach .story-image img{display:block;width:100%;height:auto;object-fit:contain;border-radius:2px;}
+}
