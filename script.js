@@ -28,7 +28,7 @@ if(form){
  const course=params.get('course');
  if(course){
    const select=form.querySelector('[name="course"]');
-   const option=[...select.options].find(o=>o.value.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')===course);
+   const option=[...select.options].find(o=>o.value.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')===(course==='bls-aed'?'adult-basic-life-support-and-aed-training':course));
    if(option) select.value=option.value;
  }
 }
@@ -68,7 +68,7 @@ if(homeEnquiryForm){
       email:String(fd.get("email")||""),
       phone:String(fd.get("phone")||""),
       course:String(fd.get("course")||""),
-      message:String(fd.get("message")||""),
+      message:(fd.get("background")?"Professional background: "+String(fd.get("background"))+"\n\n":"")+String(fd.get("message")||""),
       privacy:fd.get("privacy")==="Agreed",
       website:String(fd.get("website")||""),
       page:location.pathname+location.search,
