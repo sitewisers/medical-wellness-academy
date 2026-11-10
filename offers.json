@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-05",
+  "version": "2026-11-10",
   "source": "User shared completion checklist, 5 October 2026; exosomes theory-only scope retained from MWA full content audit 5 October 2026",
   "brand": "Medical Wellness Academy",
   "email": "academy@medicalwellnesslondon.com",
@@ -11,27 +11,42 @@
       "title": "Pathway to Aesthetics",
       "label": "Three day programme",
       "duration": "3 days",
-      "dates": "28, 29 and 30 October 2026",
       "price": 1999,
       "image": "room-1.webp",
       "lead": "Build your understanding of aesthetic treatments, consultation and safe practice through focused theory and supervised practical learning in London.",
       "intro": "A structured three day programme bringing anatomy, treatment selection and core aesthetics topics together, with consultation, consent and aftercare throughout.",
       "groups": [
         [
-          "Foundations and consultation",
-          "Anatomy and physiology; consultation and consent; treatment selection; safe practice and aftercare."
+          "Anatomy & Physiology",
+          "Build foundational understanding of skin, facial anatomy and the structures relevant to aesthetic practice. Connect this knowledge with consultation, suitability and safe treatment planning."
         ],
         [
-          "Foundation injectable topics",
-          "Foundation antiwrinkle and fillers; filler dissolving and complications; assessment and treatment planning."
+          "Microneedling",
+          "Explore skin assessment, contraindications, equipment and cartridge considerations, microneedling principles, aftercare and supervised practical learning."
         ],
         [
-          "Skin and product knowledge",
-          "Microneedling; polynucleotides; Lumi Eyes; mesotherapy; skin boosters; Profhilo; chemical peels."
+          "Chemical Peels",
+          "Understand peel types and depth, skin preparation, consultation, contraindications, treatment principles, aftercare and recognising potential complications."
         ],
         [
-          "Exosomes",
-          "Theory only. The current programme does not promise practical exosome administration."
+          "Mesotherapy",
+          "Learn skin assessment, mesotherapy principles, patient suitability, product-specific considerations, safe working and aftercare."
+        ],
+        [
+          "Skin Boosters & Polynucleotides",
+          "Explore the principles behind these treatment categories, relevant anatomy, consultation, product differences, suitability, treatment planning and aftercare."
+        ],
+        [
+          "Foundation Anti-Wrinkle Treatments",
+          "Study facial assessment and anatomy, botulinum toxin principles, contraindications, complications awareness and the importance of appropriate prescribing arrangements and professional scope."
+        ],
+        [
+          "Foundation Dermal Fillers",
+          "Explore facial assessment, filler principles, patient selection, treatment planning, anatomical risk awareness and supervised practical learning."
+        ],
+        [
+          "Additional programme learning",
+          "Profhilo, Lumi Eyes, filler dissolving and complication management are included in the programme content, alongside exosome theory. Practical participation follows your eligibility and the programme arrangements."
         ]
       ],
       "note": "Anatomy and physiology content does not establish a formal Level 3 qualification. The programme has its own timetable, assessment and certificate requirements.",
@@ -43,7 +58,6 @@
       "title": "Wellness Injection Masterclass",
       "label": "One day masterclass",
       "duration": "1 day",
-      "dates": "Next course date to be confirmed",
       "price": 599,
       "image": "room-3.webp",
       "lead": "Bring phlebotomy, IV therapy, IM vitamin injections and PRP together in one focused day of theory and supervised practical learning.",
@@ -51,23 +65,27 @@
       "groups": [
         [
           "Phlebotomy",
-          "Blood collection techniques, patient identification and safe sample handling."
+          "Learn patient identification, preparation and consent, vein selection and blood collection principles, safe sample handling, labelling, infection prevention and sharps safety. Connect blood collection with the preparation stages used in PRP."
         ],
         [
-          "IV therapy",
-          "IV cannulation and infusion principles, preparation, monitoring and recognising when to escalate concerns."
+          "IV Drip Therapy",
+          "Explore patient assessment, suitability and contraindications, IV cannulation, infusion preparation and administration principles, observation and monitoring, recognising complications, escalation and aftercare."
         ],
         [
-          "IM vitamin injections",
-          "Vitamin selection principles, suitability, contraindications and IM injection techniques within an approved clinical framework."
+          "IM Vitamin Injections",
+          "Understand clinical indications and suitability, vitamin selection principles, injection-site assessment, preparation and administration principles, medicine and prescribing requirements, infection prevention, records and aftercare."
         ],
         [
-          "PRP",
-          "PRP preparation, centrifugation and treatment principles, linked to the selected system and approved protocol."
+          "Platelet-Rich Plasma (PRP)",
+          "Understand how PRP is prepared from a patient’s blood. Study preparation and centrifugation, equipment-specific principles, patient and treatment selection, consent, complication awareness and aftercare. PRF and exosomes are separate subjects."
+        ],
+        [
+          "Skills that connect all four subjects",
+          "Patient consultation, medical history, informed consent, documentation, infection prevention, recognising complications and safe clinical judgement run throughout the masterclass."
         ]
       ],
       "note": "The combined masterclass has its own timetable, practical scope, assessment and certificate requirements. It does not automatically include the full hours or awards of separate activities.",
-      "related": "Pathway to Aesthetics is a separate three day programme on 28, 29 and 30 October 2026."
+      "related": "Pathway to Aesthetics is a separate three day programme."
     },
     {
       "id": "RMM-TBD",
@@ -75,7 +93,6 @@
       "title": "Regenerative Medicine Masterclass",
       "label": "Regenerative masterclass",
       "duration": "To be confirmed",
-      "dates": "Next course date to be confirmed",
       "price": 699,
       "image": "room-3.webp",
       "lead": "PRP, PRF and exosome science with safe professional practice throughout.",
@@ -87,7 +104,6 @@
       "title": "Collagen Biostimulators Masterclass",
       "label": "Liquid Face Lift masterclass",
       "duration": "To be confirmed",
-      "dates": "Next course date to be confirmed",
       "price": 899,
       "image": "clinic-detail.jpg",
       "lead": "Sculptra, Olidia and Radiesse with product science, assessment and treatment planning.",

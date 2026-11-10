@@ -25,3 +25,4 @@
 /legal/privacy.html
 /legal/terms.html
 /legal/cancellation.html
+/courses/bls-aed.html
