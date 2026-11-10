@@ -163,3 +163,12 @@ h1,h2,h3,p{max-width:100%;overflow-wrap:break-word}
  .academy-approach .story-copy p{font-size:16px;line-height:1.75;}
  .academy-approach .story-image img{display:block;width:100%;height:auto;object-fit:contain;border-radius:2px;}
 }
+
+@media(max-width:700px){
+ .refresh-trust .wrap > div:first-child,
+ .section-head:has(> .catalogue-cpd-badge){display:grid!important;grid-template-columns:minmax(0,1fr);width:100%;justify-items:center!important;gap:20px!important;text-align:center;}
+ .refresh-trust .home-cpd-badge,
+ .section-head > .catalogue-cpd-badge{justify-self:center;display:block;margin:0 auto!important;max-width:150px;width:150px;}
+ .refresh-trust .wrap > div:first-child > div,
+ .section-head:has(> .catalogue-cpd-badge) > div{width:100%;text-align:center;}
+}
