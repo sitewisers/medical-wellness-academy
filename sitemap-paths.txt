@@ -3,7 +3,7 @@
 /training.html
 /faqs.html
 /enquire.html
-/courses/index.html
+/courses/
 /courses/pathway-to-aesthetics.html
 /courses/microneedling.html
 /courses/anatomy-physiology.html
